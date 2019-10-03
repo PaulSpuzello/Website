@@ -1,0 +1,22 @@
+﻿@model CIS174_TestCoreApp.Models.StudentModel
+
+<h2>Enter Access Level</h2>
+<form method="post">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-4">
+                    @Html.LabelFor(m => m.accessLevel)
+                </div>
+                <div class="col-md-8">
+                    @Html.EditorFor(m => m.accessLevel)
+                </div>
+                <div class="pull-right col-md-8 text-danger">
+                    @Html.ValidationMessageFor(m => m.accessLevel)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Submit</button>
+</form>

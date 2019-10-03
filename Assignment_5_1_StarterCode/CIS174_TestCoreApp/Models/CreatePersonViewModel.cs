@@ -37,7 +37,7 @@ namespace CIS174_TestCoreApp.Models
         [MinLength(7)]
         public string Website { get; set; }
 
-        [ReadOnly(true)]
+        [ReadOnly(true)] 
         public string School { get; set; }
     }
 }
